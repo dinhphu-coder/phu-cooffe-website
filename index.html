@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Phú Cooffe - Quán cà phê Việt Nam phong cách tối giản. Thưởng thức cà phê phin truyền thống và không gian yên tĩnh giữa lòng thành phố.">
+  <meta name="keywords" content="cà phê, coffee, phú cooffe, cà phê việt nam, quán cà phê, vietnamese coffee">
+  <meta name="author" content="Phú Cooffe">
+  <meta name="theme-color" content="#0a0a0a">
+  
+  <title>Phú Cooffe — Cà Phê Việt Nam Đích Thực</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-logo">Phú <span class="accent">Cooffe</span></div>
+    <div class="loading-bar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+            <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+            <line x1="6" x2="6" y1="2" y2="4"/>
+            <line x1="10" x2="10" y1="2" y2="4"/>
+            <line x1="14" x2="14" y1="2" y2="4"/>
+          </svg>
+        </span>
+        Phú <span class="logo-accent">Cooffe</span>
+      </a>
+      
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active" data-nav>Trang chủ</a>
+        <a href="#menu" data-nav>Thực đơn</a>
+        <a href="#about" data-nav>Về chúng tôi</a>
+        <a href="#testimonials" data-nav>Đánh giá</a>
+        <a href="#contact" data-nav>Liên hệ</a>
+        <a href="#contact" class="nav-cta">Đặt bàn</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/hero-coffee.jpg" alt="Cà phê phin truyền thống Việt Nam" loading="eager">
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Specialty Vietnamese Coffee
+        </div>
+        
+        <h1 class="hero-title">
+          Hương vị cà phê<br>
+          <span class="highlight">đích thực</span> Việt Nam
+        </h1>
+        
+        <p class="hero-description">
+          Mỗi giọt cà phê tại Phú Cooffe đều được chọn lọc kỹ lưỡng từ những vùng nguyên liệu tốt nhất. 
+          Trải nghiệm sự tinh tế trong từng ly cà phê.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">
+            Khám phá thực đơn
+            <span class="arrow">→</span>
+          </a>
+          <a href="#about" class="btn btn-secondary">
+            Câu chuyện của chúng tôi
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number">5<span class="accent">+</span></div>
+            <div class="hero-stat-label">Năm kinh nghiệm</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">20<span class="accent">K+</span></div>
+            <div class="hero-stat-label">Khách hàng hài lòng</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">30<span class="accent">+</span></div>
+            <div class="hero-stat-label">Loại đồ uống</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Strip -->
+  <section class="features-strip">
+    <div class="container">
+      <div class="features-grid reveal">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="feature-text">
+            <h4>Chất lượng cam kết</h4>
+            <p>100% hạt cà phê Arabica & Robusta chọn lọc</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="feature-text">
+            <h4>Rang thủ công</h4>
+            <p>Rang mỗi ngày đảm bảo hương vị tươi mới</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="feature-text">
+            <h4>Mở cửa từ 7AM</h4>
+            <p>Phục vụ mỗi ngày, kể cả cuối tuần</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div class="feature-text">
+            <h4>Không gian ấm cúng</h4>
+            <p>Thiết kế tối giản, yên tĩnh cho bạn thư giãn</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="menu-header reveal">
+        <div class="section-label">Thực đơn</div>
+        <h2 class="section-title">Đặc sản của chúng tôi</h2>
+        <p class="section-subtitle">Từ cà phê truyền thống Việt Nam đến những sáng tạo hiện đại, mỗi ly đều là một tác phẩm nghệ thuật.</p>
+      </div>
+
+      <div class="menu-tabs reveal">
+        <button class="menu-tab active" data-category="all">Tất cả</button>
+        <button class="menu-tab" data-category="coffee">Cà phê</button>
+        <button class="menu-tab" data-category="tea">Trà & Khác</button>
+        <button class="menu-tab" data-category="food">Ăn vặt</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Menu items will be rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <img src="images/about-interior.jpg" alt="Không gian nội thất Phú Cooffe" loading="lazy">
+          <div class="floating-card">
+            <div class="fc-number">2019</div>
+            <div class="fc-text">Thành lập</div>
+          </div>
+        </div>
+        
+        <div class="about-content reveal">
+          <div class="section-label">Về chúng tôi</div>
+          <h2 class="section-title">Nơi cà phê kể<br>câu chuyện</h2>
+          <p class="section-subtitle">
+            Phú Cooffe không chỉ là một quán cà phê — đó là nơi kết nối con người qua từng tách cà phê. 
+            Chúng tôi tin rằng mỗi hạt cà phê đều mang trong mình một câu chuyện, 
+            từ vùng đất Tây Nguyên đầy nắng gió đến ly cà phê thơm lừng trên tay bạn.
+          </p>
+          
+          <div class="about-values">
+            <div class="about-value">
+              <div class="about-value-icon">🌱</div>
+              <h4>Nguồn gốc bền vững</h4>
+              <p>Hợp tác trực tiếp với nông dân địa phương.</p>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">🎨</div>
+              <h4>Sáng tạo không ngừng</h4>
+              <p>Luôn tìm kiếm hương vị mới lạ và độc đáo.</p>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">🤝</div>
+              <h4>Cộng đồng</h4>
+              <p>Không gian cho mọi người giao lưu, chia sẻ.</p>
+            </div>
+            <div class="about-value">
+              <div class="about-value-icon">✨</div>
+              <h4>Trải nghiệm tận tâm</h4>
+              <p>Phục vụ bằng cả trái tim và đam mê.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <div class="section-label">Đánh giá</div>
+        <h2 class="section-title">Khách hàng nói gì?</h2>
+        <p class="section-subtitle">Sự hài lòng của khách hàng là động lực lớn nhất của chúng tôi.</p>
+      </div>
+
+      <div class="testimonials-grid reveal">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-text">
+            "Cà phê sữa đá ở đây đúng là tuyệt vời! Không gian yên tĩnh, nhân viên thân thiện. 
+            Đây là nơi tôi đến mỗi sáng trước khi đi làm."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MH</div>
+            <div class="testimonial-author-info">
+              <h5>Minh Hoàng</h5>
+              <p>Khách hàng thường xuyên</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-text">
+            "Lần đầu tiên thử cà phê trứng và tôi đã bị chinh phục hoàn toàn. 
+            Hương vị béo ngậy, thơm nồng — đúng là đặc sản Hà Nội!"
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">TL</div>
+            <div class="testimonial-author-info">
+              <h5>Thuỳ Linh</h5>
+              <p>Food blogger</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial-text">
+            "Không gian làm việc lý tưởng! WiFi mạnh, ổ cắm khắp nơi, 
+            và cà phê thì cứ gọi là uống hoài không chán. Highly recommend!"
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">ĐK</div>
+            <div class="testimonial-author-info">
+              <h5>Đức Khang</h5>
+              <p>Freelancer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div>
+            <div class="section-label">Liên hệ</div>
+            <h2 class="section-title">Hãy ghé thăm<br>chúng tôi</h2>
+            <p class="section-subtitle">Chúng tôi luôn sẵn sàng chào đón bạn. Ghé qua để thưởng thức một ly cà phê tuyệt vời nhé!</p>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-text">
+              <h4>Địa chỉ</h4>
+              <p>123 Nguyễn Huệ, Quận 1<br>TP. Hồ Chí Minh, Việt Nam</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div class="contact-item-text">
+              <h4>Điện thoại</h4>
+              <p>+84 28 1234 5678</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">⏰</div>
+            <div class="contact-item-text">
+              <h4>Giờ mở cửa</h4>
+              <p>Thứ 2 – Chủ nhật: 7:00 – 22:00</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div class="contact-item-text">
+              <h4>Email</h4>
+              <p>hello@phucooffe.vn</p>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Họ và tên</label>
+              <input type="text" id="contactName" placeholder="Nguyễn Văn A" required>
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Số điện thoại</label>
+              <input type="tel" id="contactPhone" placeholder="0901 234 567">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" placeholder="email@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Lời nhắn</label>
+            <textarea id="contactMessage" placeholder="Hãy để lại lời nhắn cho chúng tôi..." required></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="button" class="btn btn-primary" id="submitBtn" onclick="handleFormSubmit()">
+              Gửi tin nhắn
+              <span class="arrow">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+                <line x1="6" x2="6" y1="2" y2="4"/>
+                <line x1="10" x2="10" y1="2" y2="4"/>
+                <line x1="14" x2="14" y1="2" y2="4"/>
+              </svg>
+            </span>
+            Phú <span class="logo-accent">Cooffe</span>
+          </a>
+          <p>Mang đến hương vị cà phê Việt Nam đích thực — nơi mỗi giọt cà phê kể một câu chuyện.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Khám phá</h4>
+          <a href="#home">Trang chủ</a>
+          <a href="#menu">Thực đơn</a>
+          <a href="#about">Về chúng tôi</a>
+          <a href="#contact">Liên hệ</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hỗ trợ</h4>
+          <a href="#">Câu hỏi thường gặp</a>
+          <a href="#">Chính sách bảo mật</a>
+          <a href="#">Điều khoản sử dụng</a>
+          <a href="#">Tuyển dụng</a>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Nhận ưu đãi</h4>
+          <p>Đăng ký email để nhận thông tin khuyến mãi và ưu đãi đặc biệt.</p>
+          <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+            <input type="email" placeholder="email@example.com" id="newsletterEmail" required>
+            <button type="submit">Đăng ký</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Phú Cooffe. Tất cả quyền được bảo lưu.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Chính sách bảo mật</a>
+          <a href="#">Điều khoản</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Cuộn lên đầu trang">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
